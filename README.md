@@ -1,40 +1,37 @@
-##About subtake 
+## About subtake 
 
 subtake is a python extension to check for subdomain takeovers.
 
-
-##Screenshots
+## Screenshots
 
 ![subtake](https://github.com/kp625544/subtake/blob/master/subtake.png "subtake in action")
 
 
-
-
-##About Sublist3r 
+## About Sublist3r 
 
 Sublist3r is python tool that is designed to enumerate subdomains of websites through various OSINT sources. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r currenly supports many search engines such as Google, Yahoo, Bing, Baidu, and Ask. More search engines may be added in the future. Sublist3r also gathers subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster and PassiveDNS.
 
 [subbrute](https://github.com/TheRook/subbrute) was integrated with Sublist3r to increase the possibility of finding more subdomains using bruteforce with an improved wordlist. The credit goes to TheRook who is the author of subbrute.
 
-##Screenshots
+## Screenshots
 
 ![Sublist3r](http://www.secgeek.net/images/Sublist3r.png "Sublist3r in action")
 
 
-##Installation
+## Installation
 
 ```
 git clone https://github.com/aboul3la/Sublist3r.git
 ```
 
-##Recommended Python Version:
+## Recommended Python Version:
 
 Sublist3r currently supports **Python 2** and **Python 3**.
 
 * The recommended version for Python 2 is **2.7.x**
 * The recommened version for Python 3 is **3.4.x**
 
-##Dependencies:
+## Dependencies:
 
 Sublist3r depends on the `requests`, `dnspython` and `argparse` python modules.
 
@@ -51,7 +48,7 @@ sudo pip install -r requirements.txt
 
 Alternatively, each module can be installed independently as shown below.
 
-####Requests Module (http://docs.python-requests.org/en/latest/)
+#### Requests Module (http://docs.python-requests.org/en/latest/)
 
 - Install for Windows:
 ```
@@ -73,7 +70,7 @@ sudo yum install python-requests
 sudo pip install requests
 ```
 
-####dnspython Module (http://www.dnspython.org/)
+#### dnspython Module (http://www.dnspython.org/)
 
 - Install for Windows:
 ```
@@ -90,7 +87,7 @@ sudo apt-get install python-dnspython
 sudo pip install dnspython
 ```
 
-####argparse Module
+#### argparse Module
 
 - Install for Ubuntu/Debian:
 ```
@@ -118,7 +115,7 @@ import sys
 sys.executable
 ```
 
-##Usage
+## Usage
 
 Short Form    | Long Form     | Description
 ------------- | ------------- |-------------
@@ -131,7 +128,7 @@ Short Form    | Long Form     | Description
 -o            | --output      | Save the results to text file
 -h            | --help        | show the help message and exit
 
-###Examples
+### Examples
 
 * To list all the basic options and switches use -h switch:
 
@@ -183,17 +180,17 @@ import sublist3r
 subdomains = sublist3r.main('yahoo.com', 40, 'yahoo_subdomains.txt', ports= None, silent=False, verbose= False, enable_bruteforce= False, engines=None)
 ```
 
-##License
+## License
 
 Sublist3r is licensed under the GNU GPL license. take a look at the [LICENSE](https://github.com/aboul3la/Sublist3r/blob/master/LICENSE) for more information.
 
 
-##Credits
+## Credits
 
 * [TheRook](https://github.com/TheRook) - The bruteforce module was based on his script **subbrute**. 
 * [Bitquark](https://github.com/bitquark) - The Subbrute's wordlist was based on his research **dnspop**. 
 
-##Thanks
+## Thanks
 
 * Special Thanks to [Ibrahim Mosaad](https://twitter.com/ibrahim_mosaad) for his great contributions that helped in improving the tool.
 
